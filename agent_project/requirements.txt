@@ -1,0 +1,28 @@
+# 依赖清单
+# 说明：这些包是按代码里的 import 整理的，版本号给的是较低的下限，
+#      方便你先装上跑起来；跑通之后建议用 `pip freeze > requirements.txt`
+#      把本机实测可用的精确版本固化下来。
+#      Python 版本：开发环境为 3.12。
+
+# ---- 界面 ----
+streamlit>=1.36
+
+# ---- LangChain / LangGraph ----
+langchain>=1.0            # 用到 langchain.agents.create_agent 与中间件
+langchain-core>=1.0
+langchain-community>=0.3  # ChatTongyi、DashScopeEmbeddings、TextLoader、PyPDFLoader
+langgraph>=1.0            # create_agent 的图运行时、Runtime
+langchain-chroma>=0.2     # Chroma 向量库封装
+langchain-text-splitters>=0.3
+
+# ---- 向量库 ----
+chromadb>=0.5
+
+# ---- 数据库 ----
+pymysql>=1.1
+
+# ---- 其他 ----
+python-dotenv>=1.0
+requests>=2.31
+PyYAML>=6.0
+pypdf>=4.0                # PyPDFLoader 解析 PDF 知识文件时需要

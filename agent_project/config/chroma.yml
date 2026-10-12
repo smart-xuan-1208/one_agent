@@ -1,0 +1,10 @@
+collection_name: agent
+persist_directory: chroma_db
+k: 3
+data_path: data
+mad5_hex_store: md5.txt
+allow_knowledge_file_type: ["txt","pdf"]
+
+chunk_size: 200 #文本分割器
+chunk_overlap: 20 #两个文本之间的重叠数
+separators: ["\n\n","\r\n\r\n","\n","\r\n","。","！","？","；","……",". ","! ","? ","; ","，",","," ",""]

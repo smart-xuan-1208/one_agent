@@ -1,0 +1,3 @@
+external_data_path: data/external/records.csv
+# 恢复历史会话时，最多把最近多少条历史消息作为上下文传给模型（0 表示不限制）
+max_history_messages: 20
