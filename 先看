@@ -1,0 +1,1 @@
+直接创个agent_chat_history表，字段有id，session_id,role,content,created_at
